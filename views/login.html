@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BodyLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/index.html">BodyLab</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/sobre-nos.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/planos.html">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/aulas.html">Aulas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contato.html">Entrar em Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Login</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="matricula" class="form-label">Matricula</label>
+                <input type="text" id="matricula" class="form-control" name="matricula" required>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required placeholder="DDMMAAAA">
+            </div>
+        <button type="submit" class="bnt bnt-primary">Entrar</button>
+        </form>
+      </section>
+    
+      <footer class="bg-light text-center py-3">© 2024 Lucas Brito / BodyLab - Todos os direitos reservados.</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/login.js"></script>
+</body>
+</html>
