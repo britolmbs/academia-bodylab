@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Professor - BodyLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/index.html">BodyLab</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/sobre-nos.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/planos.html">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/aulas.html">Aulas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contato.html">Entrar em Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container my5">
+        <h2 class="text-center mb-4">Inserir Avaliação</h2>
+        <form id="inserirAvaliacaoForm">
+            <div class="mb-3">
+                <label for="aluno" class="form-label">Matrícula do Aluno</label>
+                <input type="text" id="aluno" name="aluno" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data</label>
+                <input type="date" id="data" name="data" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="braco" class="form-label">Braço (cm)</label>
+                <input type="number" id="braco" name="braco" class="form-control" min="0" step="0.01" required>
+            </div>
+            <div class="mb-3">
+                <label for="perna" class="form-label">Perna (cm)</label>
+                <input type="number" class="form-control" id="perna" name="perna" min="0" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                <label for="coxa" class="form-label">Coxa (cm)</label>
+                <input type="number" class="form-control" id="coxa" name="coxa" min="0" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                <label for="panturrilha" class="form-label">Panturrilha (cm)</label>
+                <input type="number" class="form-control" id="panturrilha" name="panturrilha" min="0" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                <label for="peito" class="form-label">Peito (cm)</label>
+                <input type="number" class="form-control" id="peito" name="peito" min="0" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                <label for="abdomen" class="form-label">Abdômen (cm)</label>
+                <input type="number" class="form-control" id="abdomen" name="abdomen" min="0" step="0.01" required>
+              </div>
+              <div class="mb-3">
+                <label for="gluteos" class="form-label">Glúteos (cm)</label>
+                <input type="number" class="form-control" id="gluteos" name="gluteos" min="0" step="0.01" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Inserir Avaliação</button>
+
+
+        </form>
+      </section>
+
+
+
+    
+      <footer class="bg-light text-center py-3">© 2024 Lucas Brito / BodyLab - Todos os direitos reservados.</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/dashboard-professor.js"></script>
+</body>
+</html>
